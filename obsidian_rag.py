@@ -18,7 +18,7 @@ from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 
 def get_args() -> str:
     parser: argparse.ArgumentParser = argparse.ArgumentParser(description="Get user file path")
-    parser.add_argument('--filepath', help='Input file path')
+    parser.add_argument('--notes_dir', help='Input file path')
     parser.add_argument('--vectorize', default=False, action=argparse.BooleanOptionalAction, help='Whether to vectorize the file')
     return parser.parse_args() 
 
@@ -39,7 +39,7 @@ def main():
     callbacks = [StreamingStdOutCallbackHandler()]
     args = get_args()
     if args.vectorize:
-        loader: ObsidianLoader = ObsidianLoader(path=args.filepath)
+        loader: ObsidianLoader = ObsidianLoader(path=args.notes_dir)
         data: list = loader.load()
         text_splitter: RecursiveCharacterTextSplitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
         all_splits: list = text_splitter.split_documents(data)
