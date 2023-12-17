@@ -17,3 +17,5 @@ The main script of the project is obsidian_rag.py. It accepts command-line argum
 `python obsidian_rag.py --filepath YOUR_FILE_PATH --vectorize`
 
 This will open up a gradio interface which is still WIP and should be made into a chat interface.
+<img width="688" alt="image" src="https://github.com/ParthSareen/obsidian-rag/assets/29360864/13747e0b-78f8-495e-9f03-c80229d537a6">
+<img width="1256" alt="image" src="https://github.com/ParthSareen/obsidian-rag/assets/29360864/f79e90e3-2624-46a9-90e0-12034c9afb42">
