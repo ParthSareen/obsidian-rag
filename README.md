@@ -1,6 +1,6 @@
 # obsidian-rag
 # NOT MAINTAINED!
-_For the maintained version of the app, see [RAG-in-a-box](https://github.com/ParthSareen/RAG-in-a-box)_
+_For the maintained version of the app, see [RAG-in-a-box](https://github.com/ParthSareen/RAG-in-a-box) it does even more than just Obsidian notes!_
 
 
 Obsidian-Rag is a local first project that leverages Langchain to perform RAG on markdown files. It is particularly designed to work with the Obsidian note-taking app since I know we're all nerds (Waterloo strong 💪).
